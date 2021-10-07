@@ -44,21 +44,6 @@ int main(int argc, char *arv[])
 	int baseTen = 420;
 	
 	baseTenToTwo(baseTen);
-	//////////////////////////////////////
-	/*cout<<">>>";
 	
-	long baseTwo;
-	
-	cin>>baseTwo;
-	
-	cout<<baseTwo<<endl;
-	
-	while(baseTwo!=0)
-	{
-		cout<<baseTwo%10<<endl;
-		
-		baseTwo = baseTwo / 10;
-	}*/
-	//////////////////////////////////////////
 	return 0;
 }
