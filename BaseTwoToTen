@@ -1,0 +1,35 @@
+#include <list>
+
+int twoPow(int exponent) {
+  if(exponent == 0)
+    return 1;
+  int count = 2;
+  for(int i = 0; i < exponent, i++)
+      count *= 2;
+  return count;
+}
+
+int main() {
+  list <int> organize;
+  cout << "Enter a binary number >>>";
+  long readIn;
+  cin >> readIn;
+  int addToList;
+  while(readIn != 0) {
+    addToList = readIn % 10;
+    organize.push_front(addToList);
+    readIn = readIn / 10;
+  }
+  int length = organize.size();
+  int baseTwo = new int[length];
+  for(int i = 0; i < length; i++) {
+    baseTwo[i] = organize.back();
+    organize.pop_back();
+  }
+  int baseTen;
+  for(int i = 0; i < length; i++) {
+    if(baseTwo[i] == 1)
+      baseTen += twoPow(i);
+  }
+  cout << "The base 10 of that binary number is " << baseTen << endl;
+}
