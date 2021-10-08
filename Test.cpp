@@ -52,3 +52,15 @@ int main(int argc, char* argv[])
       return 0;		  // end the program
   }
 }
+
+/*
+string readIn;
+cout << "Enter a base 16 number >>>";
+cin >> readIn;
+int length = readIn.length();
+string baseSixteen = new string[length];
+for(int 1 = 0; i < length; i++) {
+	baseSixteen[i] = readIn.at(i);
+}
+//use this array to find the binary numbers associated with
+*/
