@@ -62,5 +62,19 @@ string baseSixteen = new string[length];
 for(int 1 = 0; i < length; i++) {
 	baseSixteen[i] = readIn.at(i);
 }
-//use this array to find the binary numbers associated with
+//use this array to find the binary numbers associated
+*/
+
+/*string readIn;
+cout << "Enter a binary number >>>";
+cin >> readIn;
+int length = readIn.length();
+string binary = new string[length/4];
+for(int 1 = 0; i < length; i+=4) {
+	binary[i] = readIn.at(i);
+	binary[i] += readIn.at(i+1);
+	binary[i] += readIn.at(i+2);
+	binary[i] += readIn.at(i+3);
+}
+//use this array to find the base 16 number(s) associated
 */
