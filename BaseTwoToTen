@@ -1,35 +1,43 @@
 #include <list>
+#include <iostream>
+
+using namespace std;
 
 int twoPow(int exponent) {
-  if(exponent == 0)
-    return 1;
-  int count = 2;
-  for(int i = 0; i < exponent, i++)
-      count *= 2;
-  return count;
+	if(exponent == 0) {
+  		return 1;
+  	 	//cout << "twoPow = 0" << endl;
+  	}
+	int count = 2;
+	for(int i = 1; i < exponent; i++)
+		count *= 2;
+  	return count;
 }
 
-int main() {
-  list <int> organize;
-  cout << "Enter a binary number >>>";
-  long readIn;
-  cin >> readIn;
-  int addToList;
-  while(readIn != 0) {
-    addToList = readIn % 10;
-    organize.push_front(addToList);
-    readIn = readIn / 10;
-  }
-  int length = organize.size();
-  int baseTwo = new int[length];
-  for(int i = 0; i < length; i++) {
-    baseTwo[i] = organize.back();
-    organize.pop_back();
-  }
-  int baseTen;
-  for(int i = 0; i < length; i++) {
-    if(baseTwo[i] == 1)
-      baseTen += twoPow(i);
-  }
-  cout << "The base 10 of that binary number is " << baseTen << endl;
+int main(int argc, char *argv[]) {
+  	list <int> organize;
+  	cout << "Enter a binary number >>>";
+  	long readIn;
+  	cin >> readIn;
+  	int addToList;
+  	while(readIn != 0) {
+    		addToList = readIn % 10;
+    		organize.push_front(addToList);
+    		readIn = readIn / 10;
+  	}
+  	int length = organize.size();
+  	int *baseTwo = new int[length];
+  	for(int i = 0; i < length; i++) {
+    		baseTwo[i] = organize.back();
+    		organize.pop_back();
+  	}
+  	for(int i = 0; i < length; i++) { //try removing this line
+  		cout << baseTwo[i] << endl; //and this line
+  	}	//and this line, and it won't work???
+  	int baseTen;
+  	for(int i = 0; i < length; i++) {
+    		if(baseTwo[i] == 1)
+      			baseTen += twoPow(i);
+  	}
+  	cout << "The base 10 of that binary number is " << baseTen << endl;
 }
