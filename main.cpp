@@ -25,8 +25,6 @@ int main(int argc, char *argv[]){
 	    	 cout<< "Enter a Binary number to be converted to Base16: ";
 	    	 cin>>num;
 	    	 cout<<"\nResult: "<<baseTwotoSixTeen(num)<<endl;
-	    }else{
-	    	cout << "enter correct input"; 
 	    }
 	    num=0;//clearing out num
 	}
