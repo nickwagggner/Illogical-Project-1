@@ -12,19 +12,19 @@ int main(int argc, char *argv[]){
 	    if(c=='1'){
 	    	cout<< "Enter a Base10 number to be converted to Binary: ";
 	    	cin>>num;
-	    	//cout<<"\nResult: "<<baseTentoTwo(num)<<endl;
+	    	cout<<"\nResult: "<<baseTentoTwo(num)<<endl;
 	    }else if (c=='2'){
 	    	cout << "Enter a Binary number to be converted to Base10: ";
 	    	cin>>num;
-	    	//cout<<"\nResult: "<<baseTwotoTen(num)<<endl;//change function names if needed
+	    	cout<<"\nResult: "<<baseTwotoTen(num)<<endl;//change function names if needed
 	    }else if (c=='3'){
 	    	cout << "Enter a Base16 number to be converted to Binary: ";
 	    	cin>>num;
-	    	//cout<<"\nResult: "<<baseSixTeentoTwo(num)<<endl;
+	    	cout<<"\nResult: "<<baseSixTeentoTwo(num)<<endl;
 	    }else if (c=='4'){
-	    	 cout<< "Enter a Binary number to be converted to Base16: ";
-	    	 cin>>num;
-	    	 //cout<<"\nResult: "<<baseTwotoSixTeen(num)<<endl;
+	    	cout<< "Enter a Binary number to be converted to Base16: ";
+	    	cin>>num;
+	    	cout<<"\nResult: "<<baseTwotoSixTeen(num)<<endl;
 	    }else if(c=='5'){
 	    	cout<<"Exiting program"<<endl;
 	    }
