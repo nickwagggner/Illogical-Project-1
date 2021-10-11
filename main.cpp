@@ -1,3 +1,18 @@
+/*
+ILLOGICAL OPERATORS  
+---------------------
+Blake Reiger
+Harrison Wiswall
+Nick Wagner
+Skyeler Knuuttila
+
+Menu-driven program to converts numbers from bases...
+  - 10 to 2
+  - 2 to 10
+  - 16 to 2
+  - 2 to 16
+*/
+
 #include <iostream>
 #include <list>
 
